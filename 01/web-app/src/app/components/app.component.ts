@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Person } from '../models/Person';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +13,7 @@ export class AppComponent {
   openMode = '_blank';
   classList = ['class1', 'class2', 'class3'];
   isHidden = false;
+  person: Person = new Person;
 
   getStr(): string {
     return 'Hello world';
