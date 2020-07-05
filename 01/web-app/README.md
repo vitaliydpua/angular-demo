@@ -1,3 +1,12 @@
+# CLI install
+npm i @angular/cli -g - install Angular CLI
+
+# New app
+ng new web-app - create new Angular application
+
+# Install packages
+npm i - install available packages by package.json
+
 # WebApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.3.

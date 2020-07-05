@@ -1,0 +1,13 @@
+.hidden {
+    display: none;
+}
+
+.circle {
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    line-height: 100%;
+    background: darkred;
+    box-shadow: 0 0 15p rgba(0, 0, 0, .7);
+}
