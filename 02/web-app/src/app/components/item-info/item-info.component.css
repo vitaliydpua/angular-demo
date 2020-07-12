@@ -1,0 +1,10 @@
+.item-info {
+    text-shadow: 5px 5px 15px rgba(0,0,0,.6);
+    font-size: 1.5rem;
+    background-color: darkred;
+    color: lime;
+    border-radius: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1% 0;
+}

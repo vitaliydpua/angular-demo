@@ -1,0 +1,4 @@
+.item:hover {
+    cursor: pointer;
+    text-shadow: 0 0 15px rgba(0,0,0,.7);
+}

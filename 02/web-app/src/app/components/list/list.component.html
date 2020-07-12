@@ -1,0 +1,5 @@
+<div class="items">
+    <ng-content></ng-content>
+    <item *ngFor="let item of items" [value]="item" (click)="itemSelect(item)"></item>
+    <button (click)="clear()">Clear</button>
+</div>
