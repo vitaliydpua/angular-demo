@@ -1,0 +1,53 @@
+<!-- Card -->
+<mdb-card>
+  <div class="view rgba-white-slight waves-light" mdbWavesEffect>
+    <!-- Card img -->
+    <mdb-card-img src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap"></mdb-card-img>
+    <a>
+      <div class="mask"></div>
+    </a>
+  </div>
+  <!--Card content-->
+  <mdb-card-body>
+    <!--Title-->
+    <mdb-card-title>
+      <h4>Card Title</h4>
+    </mdb-card-title>
+
+    <!--Text-->
+    <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's
+      content.
+    </mdb-card-text>
+
+    <a href="#" mdbBtn color="primary" mdbWavesEffect>Button</a>
+  </mdb-card-body>
+</mdb-card>
+<!-- Card -->
+
+<login-form></login-form>
+
+<!-- 
+
+ -->
+
+<form [formGroup]="someForm">
+  <div>
+    <label>Name</label>
+    <input type="text" formControlName="name">
+    <span class="error" *ngIf="ctrlName.invalid && (ctrlName.touched || ctrlName.dirty)">Invalid</span>
+  </div>
+  <div>
+    <label>Age</label>
+    <input type="number" formControlName="age">
+  </div>
+  <button (click)="onClickAddNewItem()">Add new item</button>
+  <div formArrayName="items" *ngFor="let item of someForm.controls['items']['controls']; let idx = index">
+    <input type="text" [formControlName]="idx"/>
+  </div>
+  <button (click)="onClickAdd()">Add</button>
+  <button (click)="onClickReset()">Reset</button>
+</form>
+
+<agm-map [latitude]="map.lat" [longitude]="map.lng" style="height: 300px">
+  <agm-marker [latitude]="map.lat" [longitude]="map.lng"></agm-marker>
+</agm-map>

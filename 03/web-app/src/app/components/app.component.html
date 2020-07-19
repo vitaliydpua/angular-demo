@@ -1,0 +1,9 @@
+
+
+<ul>
+    <li *ngFor="let item of dataService.getItems()" (click)="onItemClick(item)">{{item}}</li>
+</ul>
+<input [(ngModel)]="tmpItem" placeholder="Enter item..."/>
+<button (click)="onSaveClick()">Save</button>
+
+<item-detail></item-detail>
